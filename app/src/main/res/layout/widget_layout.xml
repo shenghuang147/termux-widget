@@ -14,7 +14,8 @@
             android:id="@+id/top_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF000000"
+            android:theme="@android:style/Theme.DeviceDefault.DayNight"
+            android:background="#60000000"
             android:orientation="horizontal"
             android:padding="6dp" >
 
@@ -24,7 +25,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="2.0"
                 android:text="@string/title_widget"
-                android:textColor="@android:color/primary_text_dark"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -33,7 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/top_row"
-            android:background="@android:color/background_light"
+            android:theme="@android:style/Theme.DeviceDefault.DayNight"
+            android:background="#60FFFFFF"
             android:divider="@android:color/darker_gray"
             android:dividerHeight="1px" >
         </ListView>
@@ -45,10 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/top_row"
-            android:background="@android:color/white"
+            android:background="#60FFFFFF"
             android:padding="6dp"
             android:text="@string/msg_no_shortcut_scripts"
-            android:textColor="@android:color/black" />
+            android:textColor="?android:attr/textColorPrimary" />
     </RelativeLayout>
 
     <ImageButton
